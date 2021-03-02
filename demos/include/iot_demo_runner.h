@@ -38,7 +38,9 @@
  */
 
 /* Individual demo task entry definitions */
-#if defined( CONFIG_CORE_MQTT_MUTUAL_AUTH_DEMO_ENABLED )
+#if defined( CONFIG_CONNECTED_DOORBELL_DEMO_ENABLED )
+   #define DEMO_entryFUNCTION              RunConnectedDoorbellDemo
+#elif defined( CONFIG_CORE_MQTT_MUTUAL_AUTH_DEMO_ENABLED )
     #define DEMO_entryFUNCTION              RunCoreMqttMutualAuthDemo
     #if defined( democonfigMQTT_ECHO_TASK_STACK_SIZE )
         #undef democonfigDEMO_STACKSIZE
