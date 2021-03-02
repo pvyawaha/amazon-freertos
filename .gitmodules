@@ -56,3 +56,6 @@
 [submodule "tools/litani"]
 	path = tools/litani
 	url = https://github.com/awslabs/aws-build-accumulator
+[submodule "libraries/3rdparty/libraries/3rdparty/tensorflow"]
+	path = libraries/3rdparty/libraries/3rdparty/tensorflow
+	url = https://github.com/espressif/tensorflow.git
